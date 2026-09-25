@@ -6,7 +6,7 @@ This task extends the Django ToDo List Kubernetes deployment by adding RBAC (Rol
 
 ## What was done
 
-1. Created a `security` directory containing an `rbac.yaml` manifest with:
+1. Created a `security` directory containing an `rbac.yml` manifest with:
    - `ServiceAccount` — identity used by the Deployment's pod
    - `Role` — grants permission to `list` `secrets`
    - `RoleBinding` — binds the `Role` to the `ServiceAccount`
@@ -15,4 +15,4 @@ This task extends the Django ToDo List Kubernetes deployment by adding RBAC (Rol
 
 ## How to validate
 
-1. Spin up the cluster:
+1. Create the cluster using `kind`:

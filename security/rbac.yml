@@ -28,5 +28,5 @@ subjects:
     name: pods-listener
 roleRef:
   kind: Role
-  name: pod-listener
+  name: role
   apiGroup: rbac.authorization.k8s.io
